@@ -8,4 +8,5 @@ export type DataRecipeItems = {
   managerName?: string;
   date?: Date | string;
   address?: string;
+  star: string;
 };

@@ -1,33 +1,145 @@
-<div class="container m-auto rounded-3 wrapper-re position-relative">
+<div class="container m-auto rounded-3 wrapper-re position-relative mt-5">
     <div class="row">
         <hr class="hr">
-        <h2 class="text-center" style="padding: 1rem 0rem;">Recipe</h2>
-        <hr class="hr">
-        <h5 class="text-center" style="padding: 1rem 0rem;">KtriShop</h5>
-        <br>
-        <br>
-        <div class="row mb-3">
-            <div class="col-6 mb-2">
-                <p>Address: </p>
+        <h2 class="text-center text-uppercase" style="padding: 1rem 0rem;">My Shop</h2>
+        <div class="row text-center">
+            <div class="col-12 mb-2">
+                <p>Address: {{Address}} </p>
             </div>
-            <div class="col-6 mb-2" style="text-align: right;">
-                <p>{{Address}}</p>
+        </div>
+        <div class="row text-center">
+            <div class="col-12 mb-2">
+                <p>Tell: {{Tell}} </p>
             </div>
-            <div class="col-6 mb-2">
-                <p>Manager: </p>
+        </div>
+        <!-- star -->
+        <div class="row">
+            <div class="col">
+                <i class="fa-solid fa-star-of-life"></i>
             </div>
-            <div class="col-6 mb-2" style="text-align: right;">
-                <p>{{ManagerName}}</p>
+            <div class="col">
+                <i class="fa-solid fa-star-of-life"></i>
             </div>
-            <div class="col-6 mb-2">
-                <p>Date: </p>
+            <div class="col">
+                <i class="fa-solid fa-star-of-life"></i>
             </div>
-            <div class="col-6 mb-2" style="text-align: right;">
-                <p>{{ myDate | date:'yyyy-MM-dd' }}</p>
+            <div class="col">
+                <i class="fa-solid fa-star-of-life"></i>
+            </div>
+            <div class="col">
+                <i class="fa-solid fa-star-of-life"></i>
+            </div>
+            <div class="col">
+                <i class="fa-solid fa-star-of-life"></i>
+            </div>
+            <div class="col">
+                <i class="fa-solid fa-star-of-life"></i>
+            </div>
+            <div class="col">
+                <i class="fa-solid fa-star-of-life"></i>
+            </div>
+            <div class="col">
+                <i class="fa-solid fa-star-of-life"></i>
+            </div>
+            <div class="col">
+                <i class="fa-solid fa-star-of-life"></i>
+            </div>
+            <div class="col">
+                <i class="fa-solid fa-star-of-life"></i>
+            </div>
+            <div class="col">
+                <i class="fa-solid fa-star-of-life"></i>
+            </div>
+            <div class="col">
+                <i class="fa-solid fa-star-of-life"></i>
+            </div>
+            <div class="col">
+                <i class="fa-solid fa-star-of-life"></i>
+            </div>
+            <div class="col">
+                <i class="fa-solid fa-star-of-life"></i>
+            </div>
+            <div class="col">
+                <i class="fa-solid fa-star-of-life"></i>
+            </div>
+            <div class="col">
+                <i class="fa-solid fa-star-of-life"></i>
+            </div>
+            <div class="col">
+                <i class="fa-solid fa-star-of-life"></i>
+            </div>
+            <div class="col">
+                <i class="fa-solid fa-star-of-life"></i>
+            </div>
+            <div class="col">
+                <i class="fa-solid fa-star-of-life"></i>
+            </div>
+        </div>
+        <h5 class="text-center text-uppercase" style="padding: 1rem 0rem;">Cash Receipt</h5>
+        <div class="row">
+            <div class="col">
+                <i class="fa-solid fa-star-of-life"></i>
+            </div>
+            <div class="col">
+                <i class="fa-solid fa-star-of-life"></i>
+            </div>
+            <div class="col">
+                <i class="fa-solid fa-star-of-life"></i>
+            </div>
+            <div class="col">
+                <i class="fa-solid fa-star-of-life"></i>
+            </div>
+            <div class="col">
+                <i class="fa-solid fa-star-of-life"></i>
+            </div>
+            <div class="col">
+                <i class="fa-solid fa-star-of-life"></i>
+            </div>
+            <div class="col">
+                <i class="fa-solid fa-star-of-life"></i>
+            </div>
+            <div class="col">
+                <i class="fa-solid fa-star-of-life"></i>
+            </div>
+            <div class="col">
+                <i class="fa-solid fa-star-of-life"></i>
+            </div>
+            <div class="col">
+                <i class="fa-solid fa-star-of-life"></i>
+            </div>
+            <div class="col">
+                <i class="fa-solid fa-star-of-life"></i>
+            </div>
+            <div class="col">
+                <i class="fa-solid fa-star-of-life"></i>
+            </div>
+            <div class="col">
+                <i class="fa-solid fa-star-of-life"></i>
+            </div>
+            <div class="col">
+                <i class="fa-solid fa-star-of-life"></i>
+            </div>
+            <div class="col">
+                <i class="fa-solid fa-star-of-life"></i>
+            </div>
+            <div class="col">
+                <i class="fa-solid fa-star-of-life"></i>
+            </div>
+            <div class="col">
+                <i class="fa-solid fa-star-of-life"></i>
+            </div>
+            <div class="col">
+                <i class="fa-solid fa-star-of-life"></i>
+            </div>
+            <div class="col">
+                <i class="fa-solid fa-star-of-life"></i>
+            </div>
+            <div class="col">
+                <i class="fa-solid fa-star-of-life"></i>
             </div>
         </div>
         <br>
-        <hr class="hr">
+        <br>
     </div>
     <div class="row d-flex justify-content-between mt-3">
         @for (item of displayProduct() ; track item.id) {
@@ -40,18 +152,232 @@
         }
     </div>
     <br>
-    <hr class="hr">
-    <div class="row row d-flex justify-content-between mt-2">
-        <div class="col-6">
-            <h5>Total:</h5>
+
+    <div class="row">
+        <div class="col">
+            <i class="fa-solid fa-star-of-life"></i>
         </div>
-        <div class="col-6" style="text-align: right;">
-            <h5 class="fw-bolder">$ {{total}}</h5>
+        <div class="col">
+            <i class="fa-solid fa-star-of-life"></i>
+        </div>
+        <div class="col">
+            <i class="fa-solid fa-star-of-life"></i>
+        </div>
+        <div class="col">
+            <i class="fa-solid fa-star-of-life"></i>
+        </div>
+        <div class="col">
+            <i class="fa-solid fa-star-of-life"></i>
+        </div>
+        <div class="col">
+            <i class="fa-solid fa-star-of-life"></i>
+        </div>
+        <div class="col">
+            <i class="fa-solid fa-star-of-life"></i>
+        </div>
+        <div class="col">
+            <i class="fa-solid fa-star-of-life"></i>
+        </div>
+        <div class="col">
+            <i class="fa-solid fa-star-of-life"></i>
+        </div>
+        <div class="col">
+            <i class="fa-solid fa-star-of-life"></i>
+        </div>
+        <div class="col">
+            <i class="fa-solid fa-star-of-life"></i>
+        </div>
+        <div class="col">
+            <i class="fa-solid fa-star-of-life"></i>
+        </div>
+        <div class="col">
+            <i class="fa-solid fa-star-of-life"></i>
+        </div>
+        <div class="col">
+            <i class="fa-solid fa-star-of-life"></i>
+        </div>
+        <div class="col">
+            <i class="fa-solid fa-star-of-life"></i>
+        </div>
+        <div class="col">
+            <i class="fa-solid fa-star-of-life"></i>
+        </div>
+        <div class="col">
+            <i class="fa-solid fa-star-of-life"></i>
+        </div>
+        <div class="col">
+            <i class="fa-solid fa-star-of-life"></i>
+        </div>
+        <div class="col">
+            <i class="fa-solid fa-star-of-life"></i>
+        </div>
+        <div class="col">
+            <i class="fa-solid fa-star-of-life"></i>
         </div>
     </div>
     <br>
+    <div class="row row d-flex justify-content-between mt-2">
+        <div class="col-6">
+            <h3 class="fw-bold">Total:</h3>
+        </div>
+        <div class="col-6" style="text-align: right;">
+            <h3 class="fw-bold">$ {{total}}</h3>
+        </div>
+        <div class="col-6 pt-1">
+            <h6 class="fw-light">Cash:</h6>
+        </div>
+        <div class="col-6 pt-1" style="text-align: right;">
+            <h6 class="fw-light">$ {{cash}}</h6>
+        </div>
+        <div class="col-6 pt-1">
+            <h6 class="fw-light">Change:</h6>
+        </div>
+        <div class="col-6 pt-1" style="text-align: right;">
+            <h6 class="fw-light">$ {{totalCash}}</h6>
+        </div>
+        <div class="col-6 pt-1">
+            <h6 class="fw-light">TotalQty:</h6>
+        </div>
+        <div class="col-6 pt-1" style="text-align: right;">
+            <h6 class="fw-light">{{totalQty}}</h6>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col">
+            <i class="fa-solid fa-star-of-life"></i>
+        </div>
+        <div class="col">
+            <i class="fa-solid fa-star-of-life"></i>
+        </div>
+        <div class="col">
+            <i class="fa-solid fa-star-of-life"></i>
+        </div>
+        <div class="col">
+            <i class="fa-solid fa-star-of-life"></i>
+        </div>
+        <div class="col">
+            <i class="fa-solid fa-star-of-life"></i>
+        </div>
+        <div class="col">
+            <i class="fa-solid fa-star-of-life"></i>
+        </div>
+        <div class="col">
+            <i class="fa-solid fa-star-of-life"></i>
+        </div>
+        <div class="col">
+            <i class="fa-solid fa-star-of-life"></i>
+        </div>
+        <div class="col">
+            <i class="fa-solid fa-star-of-life"></i>
+        </div>
+        <div class="col">
+            <i class="fa-solid fa-star-of-life"></i>
+        </div>
+        <div class="col">
+            <i class="fa-solid fa-star-of-life"></i>
+        </div>
+        <div class="col">
+            <i class="fa-solid fa-star-of-life"></i>
+        </div>
+        <div class="col">
+            <i class="fa-solid fa-star-of-life"></i>
+        </div>
+        <div class="col">
+            <i class="fa-solid fa-star-of-life"></i>
+        </div>
+        <div class="col">
+            <i class="fa-solid fa-star-of-life"></i>
+        </div>
+        <div class="col">
+            <i class="fa-solid fa-star-of-life"></i>
+        </div>
+        <div class="col">
+            <i class="fa-solid fa-star-of-life"></i>
+        </div>
+        <div class="col">
+            <i class="fa-solid fa-star-of-life"></i>
+        </div>
+    </div>
+    <div class="row d-flex justify-content-between mt-3">
+        <div class="col-6">
+            <p>Bankcard: </p>
+        </div>
+        <div class="col-6" style="text-align: right;">
+            <p>{{Bankcard}}</p>
+        </div>
+        <div class="col-6">
+            <p>Approval Code: </p>
+        </div>
+        <div class="col-6" style="text-align: right;">
+            <p>{{ApproveCode}}</p>
+        </div>
+    </div>
+    <br>
+
+    <div class="row">
+        <div class="col">
+            <i class="fa-solid fa-star-of-life"></i>
+        </div>
+        <div class="col">
+            <i class="fa-solid fa-star-of-life"></i>
+        </div>
+        <div class="col">
+            <i class="fa-solid fa-star-of-life"></i>
+        </div>
+        <div class="col">
+            <i class="fa-solid fa-star-of-life"></i>
+        </div>
+        <div class="col">
+            <i class="fa-solid fa-star-of-life"></i>
+        </div>
+        <div class="col">
+            <i class="fa-solid fa-star-of-life"></i>
+        </div>
+        <div class="col">
+            <i class="fa-solid fa-star-of-life"></i>
+        </div>
+        <div class="col">
+            <i class="fa-solid fa-star-of-life"></i>
+        </div>
+        <div class="col">
+            <i class="fa-solid fa-star-of-life"></i>
+        </div>
+        <div class="col">
+            <i class="fa-solid fa-star-of-life"></i>
+        </div>
+        <div class="col">
+            <i class="fa-solid fa-star-of-life"></i>
+        </div>
+        <div class="col">
+            <i class="fa-solid fa-star-of-life"></i>
+        </div>
+        <div class="col">
+            <i class="fa-solid fa-star-of-life"></i>
+        </div>
+        <div class="col">
+            <i class="fa-solid fa-star-of-life"></i>
+        </div>
+        <div class="col">
+            <i class="fa-solid fa-star-of-life"></i>
+        </div>
+        <div class="col">
+            <i class="fa-solid fa-star-of-life"></i>
+        </div>
+        <div class="col">
+            <i class="fa-solid fa-star-of-life"></i>
+        </div>
+        <div class="col">
+            <i class="fa-solid fa-star-of-life"></i>
+        </div>
+        <div class="col">
+            <i class="fa-solid fa-star-of-life"></i>
+        </div>
+        <div class="col">
+            <i class="fa-solid fa-star-of-life"></i>
+        </div>
+    </div>
     <h3 class="text-center" style="padding: 1rem 0rem;">Thank You</h3>
-    <hr class="hr">
     <br>
     <h4>{{barcode}}</h4>
     <div class="dashed-edge"></div>

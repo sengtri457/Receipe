@@ -76,9 +76,16 @@ h4 {
     border-bottom-right-radius: 9999px;
 }
 
+.fa-star-of-life {
+    font-weight: 550;
+    color: gray;
+    width: 80%;
+    opacity: 0.8;
+}
+
 @media screen and (max-width:768px) {
     .wrapper-re {
-        width: 60%;
+        width: 90%;
     }
 
     h4 {
