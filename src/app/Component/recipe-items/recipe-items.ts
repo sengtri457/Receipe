@@ -17,12 +17,14 @@ export class RecipeItems implements OnInit {
   cash: number = this.recipeService.cash;
   Address = ' street 123 Khan SenSok Phnome Penh';
   Tell: string = '099706869';
-  barcode: string = '1234567890';
-  Bankcard = Math.floor(Math.random() * parseInt(this.barcode));
-  // ApproveCode: any =
-  //   Math.floor(Math.random() * parseInt(this.barcode)) + 'äuaua';
+  empt = '';
+  barcode: number = Math.floor(Math.random() * 10000000000);
+  Bankcard = Math.floor(Math.random() * 1e9)
+    .toString()
+    .padStart(9, '0');
+  formatted = this.Bankcard.replace(/(.{3})(?=\d)/g, '$1 ');
   getCustomCode(): string {
-    const numbers = this.barcode;
+    const numbers: string = String(this.barcode);
     const letters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
     let code = '#';
     for (let i = 0; i < 3; i++) {
