@@ -123,6 +123,14 @@
         <br>
         <br>
     </div>
+    <div class="row">
+        <div class="col-6">
+            <p class="fw-bold">Description</p>
+        </div>
+        <div class="col-6">
+            <p class="fw-bold" style="text-align: right;">price</p>
+        </div>
+    </div>
     <div class="row d-flex justify-content-between mt-3">
         @for (item of displayProduct() ; track item.id) {
         <div class="col-6 mb-2">
@@ -194,19 +202,19 @@
             <h3 class="fw-bold">Total:</h3>
         </div>
         <div class="col-6" style="text-align: right;">
-            <h3 class="fw-bold">$ {{total}}</h3>
+            <h3 class="fw-bold">$ {{CashTotal}}</h3>
         </div>
         <div class="col-6 pt-1">
             <h6 class="fw-light">Cash:</h6>
         </div>
         <div class="col-6 pt-1" style="text-align: right;">
-            <h6 class="fw-light">$ {{cash}}</h6>
+            <h6 class="fw-light">$ {{cashMoney}}</h6>
         </div>
         <div class="col-6 pt-1">
             <h6 class="fw-light">Change:</h6>
         </div>
         <div class="col-6 pt-1" style="text-align: right;">
-            <h6 class="fw-light">$ {{totalCash}}</h6>
+            <h6 class="fw-light">$ {{ChangeCash}}</h6>
         </div>
         <div class="col-6 pt-1">
             <h6 class="fw-light">TotalQty:</h6>
